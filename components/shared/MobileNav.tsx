@@ -1,7 +1,7 @@
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
 import { Separator } from '@/components/ui/separator'
 import Image from 'next/image'
-import NavItems from './NavItems'
+import { NavItems } from './NavItems'
 
 
 const MobileNav = () => {

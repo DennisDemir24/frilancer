@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import MobileNav from './MobileNav';
 import { Button } from '../ui/button';
+import { NavItems } from './NavItems';
 
 const Header = () => {
   return (
@@ -16,9 +17,7 @@ const Header = () => {
           />
         </Link>
         <nav className='md:flex-between hidden w-full max-w-xs'>
-          <div>HOME</div>
-          <div>OUR MISSION</div>
-          <div>CONTACT</div>
+          <NavItems />
         </nav>
         <div className='flex w-32 justify-end gap-3'>
           <>

@@ -7,6 +7,7 @@ const UserSchema = new Schema({
     firstName: {type: String, required: true},
     lastName: {type: String, required: true},
     photo: {type: String, required: true, unique: true},
+    role: { type: String, enum: ['clerk', 'company'], default: 'clerk' }
 })
 
 const User = models.User || model('User', UserSchema)
